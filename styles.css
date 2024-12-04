@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#2d7dfe;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+button.sponsor {
+    background: linear-gradient(to right, #333, #555); /* Gradient background */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Add padding for better spacing */
+    font-size: 16px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button.sponsor:hover {
+    background: linear-gradient(to right, #555, #333); /* Reverse gradient on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+main img {
+    width: 400px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 36px; /* Increase text size */
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.content .highlight {
+    color: #ff686b;
+}
+
+.content .buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+button.download {
+    background-color: #e04f5f;
+    color: white;
+}
+
+/* .screenshot {
+    max-width: 400px;
+} */
+
+.screenshot img {
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    color: #333;
+    font-size: 14px;
+}
+
+p a {
+    color: #0078d7;
+    text-decoration: none;
+}
+
+/* New features section styles */
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 30px 0;
+    gap: 40px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.feature-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+/* Ecosystem Section Styles */
+.ecosystem-container {
+    background-color: #f5f5f5; /* Full-width background color */
+    padding: 50px 0; /* Padding for top and bottom */
+}
+
+.ecosystem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px; /* Centers the content */
+    margin: 0 auto; /* Centers the content */
+    padding: 0 20px; /* Adds consistent padding on left and right */
+}
+
+.ecosystem-content, .sponsored {
+    flex: 1 1 300px; /* Allows the sections to wrap on smaller screens */
+    margin: 20px;
+}
+
+.ecosystem-content {
+    max-width: 600px;
+}
+
+.ecosystem-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.ecosystem-content p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.ecosystem-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.ecosystem-content ul li {
+    margin-bottom: 10px;
+}
+
+.ecosystem-content ul li a {
+    color: #0078d7;
+    text-decoration: none;
+}
+
+.sponsored {
+    text-align: center;
+    max-width: 400px;
+}
+
+.sponsored h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.sponsor-logos img {
+    max-width: 80px;
+    max-height: 80px;
+    /* border-radius: 5px; */
+    border-radius: 50%;
+}
+
+
+.sponsored p {
+    font-size: 16px;
+    color: #555;
+}
+
+.sponsored p a {
+    color: #0078d7;
+    text-decoration: none;
+}
