@@ -103,17 +103,107 @@ a:hover {
     text-decoration: underline;
 }
 
+
+
+
+
+
+/* General section styling */
+#installation {
+    margin-bottom: 40px;
+}
+
+#installation h1, #installation h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+#installation p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#installation ul, #installation ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+#installation ul li, #installation ol li {
+    margin-bottom: 10px;
+}
+
+/* Code blocks styling */
+#installation pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Links in the Installation section */
+#installation a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#installation a:hover {
+    text-decoration: underline;
+}
+
+/* Highlight important keywords */
+#installation code {
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+/* Subsections for better structure */
+#installation h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Connecting MITM */
 
-#connecting img {
-    display: block;
-    margin: 15px auto;
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+#connecting .section img {
+    padding: 15px 0; /* Equal vertical padding for all images */
+    margin: 0 auto;  /* Center horizontally in the container */
 }
+
+/* Make connecting MITM section images smaller and responsive */
+#connecting img {
+    max-width: 100%; /* Image adjusts to the container's width */
+    height: 500px;    /* Maintain aspect ratio */
+    margin: 0 auto;  /* Center-align the images */
+    display: block;  /* Ensure block-level rendering */
+    border: 1px solid #ddd; /* Add a border for better clarity */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
 
 #connecting ol {
     margin-left: 20px;
