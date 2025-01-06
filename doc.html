@@ -18,6 +18,7 @@
                 <ul>
                     <li class="active"><a href="#introduction" onclick="showSection('introduction')">Introduction</a></li>
                     <li><a href="#installation" onclick="showSection('installation')">Installation</a></li>
+                    <li><a href="#CUA" onclick="showSection('CUA')">Certificate Unpinned Apps</a></li>
                     <li><a href="#connecting" onclick="showSection('connecting')">Connecting MITM</a></li>
                     <li><a href="#usage" onclick="showSection('usage')">Usage</a></li>
                     <li><a href="#examples" onclick="showSection('examples')">Examples</a></li>
@@ -26,20 +27,123 @@
             </nav>
         </aside>
         <main class="content">
+
+            <!-- Introduction Section -->
             <div id="introduction" class="section">
                 <h1>Introduction</h1>
                 <p>contenSave is a powerful and flexible tool for data collection, designed to handle a variety of data sources with ease.</p>
             </div>
+
+
+
+            <!-- Installation Section -->
             <div id="installation" class="section" style="display: none;">
                 <h1>Installation</h1>
-                <p>Follow the steps below to install contenSave:</p>
+                <p>Follow the following steps to Install ContentSave Package on your computer</p>
+            
+                <br>
+                <h2>Prerequisites</h2>
                 <ul>
-                    <li>Download the latest version from the <a href="#">GitHub repository</a>.</li>
-                    <li>Run the installation script for your operating system.</li>
-                    <li>Verify the installation by running <code>contentsave --version</code>.</li>
+                    <li>Python 3.6 or higher installed</li>
                 </ul>
+                <br>
+
+                <h2 id="setting-up-yolo-model-files">Setting Up YOLO Model Files</h2>
+                <p>Before running the package, you will need to download the YOLO model files (to run the video summarization script):</p>
+                <ol>
+                    <li>
+                        Create the <code>models/</code> directory at the root of the project:
+                        <pre><code>cd ContentSavePackage\contentSavePackage\ContentSavePackage <br>mkdir models <br>cd models</code></pre>
+                    </li>
+                    <li>
+                        Download <code>yolov3.weights</code> from <a href="https://pjreddie.com/media/files/yolov3.weights" target="_blank">here</a> and place it in the `models/` directory.
+                    </li>
+                    <li>
+                        Download <code>yolov3.cfg</code>:
+                        <pre><code>curl -o yolov3.cfg https://github.com/ajk-github/ContentSaveWeb/blob/main/model-weights/yolov3.cfg</code></pre>
+                        <p>If the command does not work, download it manually from <a href="model-weights/yolov3.cfg" target="_blank">here</a>.</p>
+                    </li>
+                    <li>
+                        Download <code>coco.names</code>:
+                        <pre><code>curl -o coco.names https://github.com/ajk-github/ContentSaveWeb/blob/main/model-weights/coco.names</code></pre>
+                        <p>If the command does not work, download it manually from <a href="model-weights/coco.names" target="_blank">here</a>.</p>
+                    </li>
+                </ol>
+                <br>
+            
+                <h2>Steps to Install and Run the Package</h2>
+                <ol>
+                    <li>
+                        Clone the Repository:
+                        <pre><code>git clone https://github.com/PrincipledInterfaces/ContentSavePackage.git</code></pre>
+                    </li>
+                    <li>
+                        Navigate to the Project Directory:
+                        <pre><code>cd ContentSavePackage</code></pre>
+                    </li>
+                    <li>
+                        Create a Virtual Environment:
+                        <pre><code>python -m venv venv</code></pre>
+                    </li>
+                    <li>
+                        Activate the Virtual Environment:
+                        <ul>
+                            <li>For Windows:
+                                <pre><code>venv\Scripts\activate</code></pre>
+                            </li>
+                            <li>For Apple:
+                                <pre><code>source venv\Scripts\activate</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Install Dependencies:
+                        <pre><code>pip install -r requirements.txt</code></pre>
+                    </li>
+                    <li>
+                        Install the Package:
+                        <pre><code>pip install .</code></pre>
+                    </li>
+                    <li>
+                        Verify Installation:
+                        <pre><code>pip list</code></pre>
+                        <p>This will display a list of installed packages, including ContentSavePackage and its dependencies.</p>
+                    </li>
+                    <li>
+                        Run the Package:
+                        <pre><code>contentsave</code></pre>
+                        <p>Now run the patched Instagram app to save all data.</p>
+                    </li>
+                </ol>
+            
+                
+            </div>
+            
+
+            <div id="CUA" class="section">
+                <h1>Certificate Unpinned Apps</h1>
+                <p>These Apps have Certificate pinning disabled (Choose the one which works for your phones chip architecture, just google what your phone has)</p>
+
+
+                <br>
+                <h3>Instagram</h3>
+                    <ul>
+                        <li><a href="CertificateUnpinnedApps/Instagram/instagram-v361.0.0.46.88-x86.apk" target="_blank">instagram-v361.0.0.46.88-x86.apk</a></li>
+                        <li><a href="CertificateUnpinnedApps/Instagram/instagram-v361.0.0.46.88-x86_64.apk" target="_blank">instagram-v361.0.0.46.88-x86_64.apk</a></li>
+                        <li><a href="CertificateUnpinnedApps/Instagram/instagram-v361.0.0.46.88-armeabi-v7a.apk" target="_blank">instagram-v361.0.0.46.88-armeabi-v7a.apk</a></li>
+                        <li><a href="CertificateUnpinnedApps/Instagram/instagram-v361.0.0.46.88-arm64-v8a.apk" target="_blank">instagram-v361.0.0.46.88-arm64-v8a.apk</a></li>
+                    </ul>
+                <br>
+                <h3>TikTok</h3>
+                    <ul>
+                        <li><a href="CertificateUnpinnedApps/Tiktok/tiktok-v37.0.4.apk" target="_blank">tiktok-v37.0.4.apk</a></li>
+                    </ul>
             </div>
 
+
+
+
+            <!-- ConnectingMITM Section -->
             <div id="connecting" class="section" style="display: none;">
                 <h1>Connecting contenSave</h1>
                 <p>Follow these steps to connect your mobile device and computer for contenSave:</p>
@@ -50,34 +154,37 @@
                     <li>On your mobile device:
                         <ol>
                             <li>Open <b>Settings</b> and go to <b>Network and Internet</b> → <b>WiFi</b>.
-                                <img src="images/network-settings.png" alt="Network and Internet Settings">
+                                <!-- <img src="images/Docs/ConnectingMITM/1.png" alt="Network and Internet Settings"> -->
                             </li>
                             <li>Press the <b>Settings</b> icon next to the WiFi name.
-                                <img src="images/wifi-settings-icon.png" alt="WiFi Settings Icon">
+                                <!-- <img src="images/Docs/ConnectingMITM/2" alt="WiFi Settings Icon"> -->
                             </li>
                             <li>Press the <b>pen icon</b> at the top of the screen.
-                                <img src="images/pen-icon.png" alt="Pen Icon">
+                                <img src="images/Docs/ConnectingMITM/1.png" alt="Pen Icon">
                             </li>
                             <li>Click on <b>Advanced Options</b> → <b>Proxy</b> → <b>Manual</b>.
-                                <img src="images/proxy-settings.png" alt="Proxy Settings">
+                                <img src="images/Docs/ConnectingMITM/2.png" alt="Proxy Settings">
                             </li>
-                            <li>Enter your computer's IP address in the <b>Proxy Hostname</b> field and <b>8080</b> in the <b>Proxy Port</b> field.
-                                <img src="images/hostname-port.png" alt="Proxy Hostname and Port">
+                            <li>Enter your <a href="https://www.wikihow.com/Check-a-Computer-IP-Address" target="_blank">computer's IP address</a>
+                                in the <b>Proxy Hostname</b> field and <b>8080</b> in the <b>Proxy Port</b> field.
                             </li>
                             <li>Save the changes.</li>
-                        </ol>
+                        
+                    
+                    <li>Open Chrome and go to <b>mitm.it</b>.
+                        <!-- <img src="images/Docs/ConnectingMITM/3.png" alt="conten.it Screen"> -->
                     </li>
-                    <li>Open Chrome and go to <b>conten.it</b>.
-                        <img src="images/mitm-it.png" alt="conten.it Screen">
+                    <li>Click on <b>Get mitmproxy-ca-cert.pem</b> under the appropriate heading.
+                        <img src="images/Docs/ConnectingMITM/3.png" alt="Certificate Download">
                     </li>
-                    <li>Click on <b>Get contenSave-ca-cert.pem</b> under the appropriate heading.
-                        <img src="images/certificate-download.png" alt="Certificate Download">
+                    <li>Go to <b>Settings</b> → <b>Security</b> → <b>Encryption and Credentials</b>.
+                        <img src="images/Docs/ConnectingMITM/4.png" alt="Certificate Install">
                     </li>
-                    <li>Go to <b>Settings</b> → <b>Security</b> → <b>Encryption and Credentials</b> and install the downloaded certificate file.
-                        <img src="images/certificate-install.png" alt="Certificate Install">
+                    <li>Click on <b>Install a Certificate</b>.
+                        <img src="images/Docs/ConnectingMITM/5.png" alt="User Certificates">
                     </li>
-                    <li>Ensure the certificate is available under <b>User Certificates</b>.
-                        <img src="images/user-certificates.png" alt="User Certificates">
+                    <li>Click on <b>CA Certificate</b> and install the downloaded certificate.
+                        <img src="images/Docs/ConnectingMITM/6.png" alt="User Certificates">
                     </li>
                 </ol>
             </div>
