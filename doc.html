@@ -11,7 +11,7 @@
         <aside class="sidebar">
             <div class="logo">
                 <a href="index.html">
-                    <span class="logo-text" style="color: white">contenSave</span>
+                    <span class="logo-text" style="color: white">contentSave</span>
                 </a>
             </div>
             <nav class="sidebar-nav">
@@ -31,7 +31,7 @@
             <!-- Introduction Section -->
             <div id="introduction" class="section">
                 <h1>Introduction</h1>
-                <p>contenSave is a powerful and flexible tool for data collection, designed to handle a variety of data sources with ease.</p>
+                <p>This Python package enables the real-time capture and analysis of Instagram traffic from an Android device. It intercepts and stores all media (images and videos) being served to the connected phone, ensuring complete and accurate data collection. Additionally, it generates concise text summaries of video content to facilitate streamlined analysis. Designed specifically for psychology researchers, this tool supports studies on the psychological effects of social media by providing an efficient and comprehensive method for content monitoring and archival.</p>
             </div>
 
 
@@ -39,7 +39,7 @@
             <!-- Installation Section -->
             <div id="installation" class="section" style="display: none;">
                 <h1>Installation</h1>
-                <p>Follow the following steps to Install ContentSave Package on your computer</p>
+                <p>Follow the steps to Install ContentSave Package on your computer</p>
             
                 <br>
                 <h2>Prerequisites</h2>
@@ -112,7 +112,7 @@
                     <li>
                         Run the Package:
                         <pre><code>contentsave</code></pre>
-                        <p>Now run the patched Instagram app to save all data.</p>
+                        <p>Run this in the location where you want the proxied data to be stored</p>
                     </li>
                 </ol>
             
@@ -145,7 +145,7 @@
 
             <!-- ConnectingMITM Section -->
             <div id="connecting" class="section" style="display: none;">
-                <h1>Connecting contenSave</h1>
+                <h1>Connecting contentSave</h1>
                 <p>Follow these steps to connect your mobile device and computer for contenSave:</p>
                 <ol>
                     <li>Connect your mobile device and computer to the same network.</li>
@@ -186,14 +186,44 @@
                     <li>Click on <b>CA Certificate</b> and install the downloaded certificate.
                         <img src="images/Docs/ConnectingMITM/6.png" alt="User Certificates">
                     </li>
+                    <li>The Downloaded Certificate should show under User Credentials 
+                        <img src="images/Docs/ConnectingMITM/7.png" alt="User Certificates">
+                    </li>
                 </ol>
             </div>
             
 
+
+
+            <!-- Usage Section -->
             <div id="usage" class="section" style="display: none;">
                 <h1>Usage</h1>
-                <p>contenSave can be used to collect data from various sources, including APIs, social media, and web scraping.</p>
+                <ul>
+                    <li>
+                        Install the package on your computer and the certificate-unpinned app on your phone.
+                    </li>
+                    <li>
+                        Use the command <code>contentsave</code> to run the package. Make sure to execute this command in the location where you want to store the data.
+                    </li>
+                    <li>
+                        Once the package is running, all content displayed on the app will be stored in real time on your computer.
+                    </li>
+                    <li>
+                        Videos stored by the package are summarized automatically using the inbuilt summarization model.
+                    </li>
+                </ul>
+                <p>Watch the video below to see a demo of how to use the package:</p>
+                <div class="video-container">
+                    <video controls>
+                        <source src="images/Docs/Videos/Usage.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
+
+            
+
+
             <div id="examples" class="section" style="display: none;">
                 <h1>Examples</h1>
                 <p>Here are some common use cases for contenSave:</p>
