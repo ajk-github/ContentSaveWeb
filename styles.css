@@ -263,10 +263,10 @@ p a {
 }
 
 .sponsor-logos img {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 300px;
+    max-height: 300px;
     /* border-radius: 5px; */
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 
