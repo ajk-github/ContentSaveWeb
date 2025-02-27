@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Use - contentSave</title>
+    <title>How to Use - SocialScribe</title>
     <link rel="stylesheet" href="styles-doc.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <aside class="sidebar">
             <div class="logo">
                 <a href="index.html">
-                    <span class="logo-text" style="color: white">contentSave</span>
+                    <span class="logo-text" style="color: white">SocialScribe</span>
                 </a>
             </div>
             <nav class="sidebar-nav">
@@ -19,7 +19,6 @@
                     <li class="active"><a href="#introduction" onclick="showSection('introduction')">Introduction</a></li>
                     <li><a href="#installation" onclick="showSection('installation')">Installation</a></li>
                     <li><a href="#CUA" onclick="showSection('CUA')">Certificate Unpinned Apps</a></li>
-                    <li><a href="#connecting" onclick="showSection('connecting')">Connecting MITM</a></li>
                     <li><a href="#usage" onclick="showSection('usage')">Usage</a></li>
                     <li><a href="#examples" onclick="showSection('examples')">Examples</a></li>
                     <li><a href="#faq" onclick="showSection('faq')">FAQ</a></li>
@@ -46,29 +45,6 @@
                 <ul>
                     <li>Python 3.6 or higher installed</li>
                 </ul>
-                <br>
-
-                <h2 id="setting-up-yolo-model-files">Setting Up YOLO Model Files</h2>
-                <p>Before running the package, you will need to download the YOLO model files (to run the video summarization script):</p>
-                <ol>
-                    <li>
-                        Create the <code>models/</code> directory at the root of the project:
-                        <pre><code>cd ContentSavePackage\contentSavePackage\ContentSavePackage <br>mkdir models <br>cd models</code></pre>
-                    </li>
-                    <li>
-                        Download <code>yolov3.weights</code> from <a href="https://pjreddie.com/media/files/yolov3.weights" target="_blank">here</a> and place it in the `models/` directory.
-                    </li>
-                    <li>
-                        Download <code>yolov3.cfg</code>:
-                        <pre><code>curl -o yolov3.cfg https://github.com/ajk-github/ContentSaveWeb/blob/main/model-weights/yolov3.cfg</code></pre>
-                        <p>If the command does not work, download it manually from <a href="model-weights/yolov3.cfg" target="_blank">here</a>.</p>
-                    </li>
-                    <li>
-                        Download <code>coco.names</code>:
-                        <pre><code>curl -o coco.names https://github.com/ajk-github/ContentSaveWeb/blob/main/model-weights/coco.names</code></pre>
-                        <p>If the command does not work, download it manually from <a href="model-weights/coco.names" target="_blank">here</a>.</p>
-                    </li>
-                </ol>
                 <br>
             
                 <h2>Steps to Install and Run the Package</h2>
@@ -108,6 +84,34 @@
                         Verify Installation:
                         <pre><code>pip list</code></pre>
                         <p>This will display a list of installed packages, including ContentSavePackage and its dependencies.</p>
+                    </li>
+                    <li>
+                        Setup YOLO Model Files:
+                        
+                        <!-- <h2 id="setting-up-yolo-model-files">Setting Up YOLO Model Files</h2> -->
+                <p>Before running the package, you will need to download the YOLO model files (to run the video summarization script):</p>
+                <ol>
+                    <li>
+                        Create the <code>models/</code> directory at the root of the project:
+                        <pre><code>cd ContentSavePackage\contentSavePackage\ContentSavePackage <br>mkdir models <br>cd models</code></pre>
+                    </li>
+                    <li>
+                        Download <code>yolov3.weights</code> from <a href="https://pjreddie.com/media/files/yolov3.weights" target="_blank">here</a> and place it in the `models/` directory.
+                    </li>
+                    <li>
+                        Download <code>yolov3.cfg</code>:
+                        <pre><code>curl -o yolov3.cfg https://github.com/ajk-github/ContentSaveWeb/blob/main/model-weights/yolov3.cfg</code></pre>
+                        <p>If the command does not work, download it manually from <a href="model-weights/yolov3.cfg" target="_blank">here</a>.</p>
+                    </li>
+                    <li>
+                        Download <code>coco.names</code>:
+                        <pre><code>curl -o coco.names https://github.com/ajk-github/ContentSaveWeb/blob/main/model-weights/coco.names</code></pre>
+                        <p>If the command does not work, download it manually from <a href="model-weights/coco.names" target="_blank">here</a>.</p>
+                    </li>
+                </ol>
+
+
+
                     </li>
                     <li>
                         Run the Package:
